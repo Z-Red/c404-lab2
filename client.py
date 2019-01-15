@@ -19,7 +19,7 @@ def connect_socket(addr_tup):
 	try:
 		s = socket.socket(family, socktype, proto)
 		s.connect(sockaddr)
-		s.sendall(payload.encode())
+		s.sendall(PAYLOAD.encode())
 
 		full_data = b""
 		while True:
